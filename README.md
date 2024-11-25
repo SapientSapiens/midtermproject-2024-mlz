@@ -1,4 +1,8 @@
->**Problem Description**
+
+<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
+Problem Description
+</h3>
+
 
 **Context**
 
@@ -33,8 +37,10 @@ This project seeks to develop a predictive solution that can determine the proba
 2. **Enhances Decision-Making**: By providing precise probabilities and actionable insights, healthcare providers can focus resources on patients at higher risk of no-showing.
 3. **Patient Welfare**: By having a predictive system of No-shows at appointment day in place, an efficient mechanism for ensuring patient attendance by intimation, follow-ups and other effective measures. As a consequence, there would be a uplift in the patient welfare of the area concerned by a having good health issue addressal of the population.
 
+<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
+Exploratory Data Analysis
+</h3>
 
->**Exploratory Data Analysis**
 
 **Cleaning and preparation** of the dataset have been done as prerequisites to the EDA here involving:
 
@@ -56,7 +62,11 @@ For the **Exploratory Data Analysis** , starting with drawing inference from bas
 
 _These exercises could be found in my_ **_notebook.ipynb_**
 
->**Model Training**
+
+<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
+Model Training
+</h3>
+
 
 As a pre-requisite of the model training, I had to:
 
@@ -73,14 +83,24 @@ Then the model training ensued for training multiple models and tuning their par
 
 _These exercises could be found in my_ **_notebook.ipynb_**
 
-> **Exporting notebook to script**
+
+
+<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
+Exporting notebook to script
+</h3>
+
 
 All data structure and data transformation including their preparation & cleaning, and feature engineering, model training of the best evaluated model with hyper-tuned parameters have been exported from the notebook in the form of a script namely **train.py** Running this script will outcome:
 
 - Generation of the **model_final.bin** file which holds the final trained model
 - Generation of the file **cleaned_prepared_df.pkl** which shall be used by the test script for providing feature engineered patient historical data for transformation of raw test input data sample for the model.
 
->**Dependency and environment management**
+
+
+<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
+Dependency and environment management
+</h3>
+
 
 _All project dependencies are listed in the_ **_Pipfile_**
 
@@ -118,7 +138,12 @@ _All project dependencies are listed in the_ **_Pipfile_**
 
 \[I 2024-11-24 13:56:40.430 ServerApp\] <http://127.0.0.1:8888/tree?token=a50930ee6fe34cbf934d8ba0460bdf942edc8f21d87df4a0>
 
->**Reproducibility**
+
+<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
+Reproducibility
+</h3>
+
+
 1. From within the virtual environment from inside the project directory, kindly run the **train.py** script to train the best evaluated model on the dataset from **KaggleV2-May-2016.csv** and save the model
     *python train.py*
 
@@ -126,7 +151,11 @@ _All project dependencies are listed in the_ **_Pipfile_**
 2. Use one of the links (you got when started the Jupyter notebook) in the browser to open the Jupyter notebook . From the Jupyter notebook GUI, you can upload my **notebook.ipynb** in the project directory and review it.
 
 
->**Model Deployment**
+<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
+Model Deployment
+</h3>
+
+
 1. Please run the **gunicorn** WSGI http server to make the flask web-service (**predict.py)** serving the model, active for consumption/use by running this command inside the virtual environment from inside the project folder
 
         gunicorn --bind 0.0.0.0:9696 predict:app
@@ -135,7 +164,12 @@ _All project dependencies are listed in the_ **_Pipfile_**
 
         python test.py
 
->**Containerization**
+
+
+<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
+Containerization
+</h3>
+
 1. Install Docker Deskop on you Windows 11 (currently I have Docker Desktop version 4.35.0). If you have other set up, you may install docker accordingly (Mac/Linux/Windows 10)
 
 2. In the settings of Docker Desktop, in the 'General' tab/menu please ensure you have "Use the WSL 2 based engine (Windows Home can only run the WSL 2 backend)" checked/ticked.
@@ -160,7 +194,12 @@ _All project dependencies are listed in the_ **_Pipfile_**
 
        python test.py
 
->**Cloud Deployment**
+
+
+<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
+Cloud Deployment
+</h3>
+
 
 1\. Navigate to project directory and issue the following command to install awsebcli (Amazon Web Service Elastic Beanstalk Command Line Interface)
 
