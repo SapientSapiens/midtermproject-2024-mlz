@@ -3,6 +3,7 @@
 Problem Description
 </h3>
 
+## Problem Description ##
 
 **Context**
 
@@ -37,9 +38,8 @@ This project seeks to develop a predictive solution that can determine the proba
 2. **Enhances Decision-Making**: By providing precise probabilities and actionable insights, healthcare providers can focus resources on patients at higher risk of no-showing.
 3. **Patient Welfare**: By having a predictive system of No-shows at appointment day in place, an efficient mechanism for ensuring patient attendance by intimation, follow-ups and other effective measures. As a consequence, there would be a uplift in the patient welfare of the area concerned by a having good health issue addressal of the population.
 
-<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
-Exploratory Data Analysis
-</h3>
+
+## Exploratory Data Analysis ##
 
 
 **Cleaning and preparation** of the dataset have been done as prerequisites to the EDA here involving:
@@ -63,9 +63,9 @@ For the **Exploratory Data Analysis** , starting with drawing inference from bas
 _These exercises could be found in my_ **_notebook.ipynb_**
 
 
-<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
-Model Training
-</h3>
+
+## Model Training ##
+
 
 
 As a pre-requisite of the model training, I had to:
@@ -85,9 +85,9 @@ _These exercises could be found in my_ **_notebook.ipynb_**
 
 
 
-<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
-Exporting notebook to script
-</h3>
+
+## Exporting notebook to script ##
+
 
 
 All data structure and data transformation including their preparation & cleaning, and feature engineering, model training of the best evaluated model with hyper-tuned parameters have been exported from the notebook in the form of a script namely **train.py** Running this script will outcome:
@@ -97,16 +97,16 @@ All data structure and data transformation including their preparation & cleanin
 
 
 
-<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
-Dependency and environment management
-</h3>
+
+## Dependency and environment management ##
+
 
 
 _All project dependencies are listed in the_ **_Pipfile_**
 
 1\. Go the your wsl environment from you powershell terminal with administrator privilege. You should land in your WSL home directory by default.
 
-    C:\\> _wsl
+    C:\\> wsl
 
 2\. If you do not have pipenv installed already, you can install it by with the command
 
@@ -114,7 +114,7 @@ _All project dependencies are listed in the_ **_Pipfile_**
 
 3\. From your home directory at WSL, clone my GitHub project repository with the link I submitted
 
-    git clone &lt;link_to_my_project_directory_at_Github&gt;.git
+    git clone https://github.com/Johnyckot/ml_prj_bank_marketing.git
 
 4\. Go inside that cloned directory
 
@@ -139,21 +139,22 @@ _All project dependencies are listed in the_ **_Pipfile_**
 \[I 2024-11-24 13:56:40.430 ServerApp\] <http://127.0.0.1:8888/tree?token=a50930ee6fe34cbf934d8ba0460bdf942edc8f21d87df4a0>
 
 
-<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
-Reproducibility
-</h3>
+
+## Reproducibility ##
+
 
 
 1. From within the virtual environment from inside the project directory, kindly run the **train.py** script to train the best evaluated model on the dataset from **KaggleV2-May-2016.csv** and save the model
-    *python train.py*
+   
+       python train.py
 
 
-2. Use one of the links (you got when started the Jupyter notebook) in the browser to open the Jupyter notebook . From the Jupyter notebook GUI, you can upload my **notebook.ipynb** in the project directory and review it.
+3. Use one of the links (you got when started the Jupyter notebook) in the browser to open the Jupyter notebook . From the Jupyter notebook GUI, you can upload my **notebook.ipynb** in the project directory and review it.
 
 
-<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
-Model Deployment
-</h3>
+
+## Model Deployment ##
+
 
 
 1. Please run the **gunicorn** WSGI http server to make the flask web-service (**predict.py)** serving the model, active for consumption/use by running this command inside the virtual environment from inside the project folder
@@ -166,9 +167,9 @@ Model Deployment
 
 
 
-<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
-Containerization
-</h3>
+
+## Containerization ##
+
 
 1. Install Docker Deskop on you Windows 11 (currently I have Docker Desktop version 4.35.0). If you have other set up, you may install docker accordingly (Mac/Linux/Windows 10)
 
@@ -196,9 +197,9 @@ Containerization
 
 
 
-<h3 style="background-color:#f0f0f0;color:#333;padding:10px;border-radius:5px;text-align:center;">
-Cloud Deployment
-</h3>
+
+## Cloud Deployment ##
+
 
 
 1\. Navigate to project directory and issue the following command to install awsebcli (Amazon Web Service Elastic Beanstalk Command Line Interface)
