@@ -116,7 +116,7 @@ _All project dependencies are listed in the_ **_Pipfile_**
 
 3\. From your home directory at WSL, clone my GitHub project repository with the link I submitted
 
-    git clone https://github.com/Johnyckot/ml_prj_bank_marketing.git
+    git clone https://github.com/SapientSapiens/midtermproject-2024-mlz.git
 
 4\. Go inside that cloned directory
 
